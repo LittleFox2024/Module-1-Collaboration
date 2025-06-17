@@ -31,7 +31,7 @@ while True:
         gpaTemp = input("What is the GPA? ")
         try:
             gpa = float(gpaTemp)
-            if gpa > 5:
+            if gpa > 5: #I'm pretty sure you can't get above 5, right?
                 print("Please give a valid GPA.\n")
                 continue
             break
@@ -45,7 +45,7 @@ while True:
     if gpa >= 3.5:
         print("\tStudent it on Dean's List.")
         print("\tStudent is on Honor Roll.\n")
-    elif gpa >= 3.25:
+    elif gpa >= 3.25: #Because of elif it won't fall through.
         print("\tStudent is on Honor Roll.\n")
     else:
         print("\tStudent is not on Dean's List or Honor Roll.\n")
