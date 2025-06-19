@@ -31,7 +31,7 @@ while True:
         gpaTemp = input("What is the GPA? ")
         try:
             gpa = float(gpaTemp)
-            if gpa > 5: #I'm pretty sure you can't get above 5, right?
+            if gpa > 5 or gpa < 0: #I'm pretty sure you can't get above 5...
                 print("Please give a valid GPA.\n")
                 continue
             break
